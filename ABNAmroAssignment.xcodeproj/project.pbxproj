@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3F03575B2ED35A5600B9B954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F03575A2ED35A5600B9B954 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3F0357612ED35A5700B9B954 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -25,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		3F0357532ED35A5500B9B954 /* ABNAmroAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABNAmroAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F03575A2ED35A5600B9B954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F0357602ED35A5700B9B954 /* ABNAmroAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABNAmroAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F03576A2ED35A5700B9B954 /* ABNAmroAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABNAmroAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -38,11 +43,6 @@
 		3F0357632ED35A5700B9B954 /* ABNAmroAssignmentTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ABNAmroAssignmentTests;
-			sourceTree = "<group>";
-		};
-		3F03576D2ED35A5700B9B954 /* ABNAmroAssignmentUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ABNAmroAssignmentUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		3F03574A2ED35A5500B9B954 = {
 			isa = PBXGroup;
 			children = (
+				3F03577D2ED35BD900B9B954 /* Resources */,
 				3F0357552ED35A5500B9B954 /* ABNAmroAssignment */,
 				3F0357632ED35A5700B9B954 /* ABNAmroAssignmentTests */,
-				3F03576D2ED35A5700B9B954 /* ABNAmroAssignmentUITests */,
 				3F0357542ED35A5500B9B954 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +90,14 @@
 				3F03576A2ED35A5700B9B954 /* ABNAmroAssignmentUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3F03577D2ED35BD900B9B954 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F03575A2ED35A5600B9B954 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +161,6 @@
 			dependencies = (
 				3F03576C2ED35A5700B9B954 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				3F03576D2ED35A5700B9B954 /* ABNAmroAssignmentUITests */,
-			);
 			name = ABNAmroAssignmentUITests;
 			packageProductDependencies = (
 			);
@@ -212,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F03575B2ED35A5600B9B954 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +334,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -383,6 +390,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
