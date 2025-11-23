@@ -1,10 +1,3 @@
-//
-//  ABNAmroAssignmentTests.swift
-//  ABNAmroAssignmentTests
-//
-//  Created by Rodrigo Ruiz on 23/11/2025.
-//
-
 import Testing
 @testable import ABNAmroAssignment
 

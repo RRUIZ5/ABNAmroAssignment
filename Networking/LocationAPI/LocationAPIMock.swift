@@ -1,3 +1,4 @@
+#if DEBUG
 final class LocationAPIMock: LocationAPISpecs {
     private let mockedLocations: [Location]?
 
@@ -14,3 +15,4 @@ final class LocationAPIMock: LocationAPISpecs {
         ]
     }
 }
+#endif
