@@ -9,7 +9,7 @@ struct ABNAmroAssignmentApp: App {
                     RecommendedListView(viewModel: RecommendListViewModel())
                 }
                 Tab("Custom location", systemImage: "globe") {
-                    EmptyView()
+                    CustomLocationView(viewModel: CustomLocationViewModel())
                 }
             }
         }
