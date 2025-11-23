@@ -9,7 +9,7 @@ struct RecommendedListView: View {
 
     var body: some View {
         VStack {
-            Text("Tap on your location to open Wikipedia")
+            Text("Tap on a location to open Wikipedia")
                 .font(.title)
 
             List(viewModel.locations) { location in
@@ -26,6 +26,9 @@ struct RecommendedListView: View {
 
 #Preview {
     RecommendedListView(
-        viewModel: RecommendListViewModel(api: LocationAPIMock())
+        viewModel: RecommendListViewModel(
+            api: LocationAPIMock(),
+            navigator: AssignmentNavigator(urlOpener: URLOpenerMock())
+        )
     )
 }

@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "159536B9-D50D-4992-9046-3F9B6BBA5CE4",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ABNAmroAssignment.xcodeproj",
+      "identifier" : "3F0357522ED35A5500B9B954",
+      "name" : "ABNAmroAssignment"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ABNAmroAssignment.xcodeproj",
+        "identifier" : "3F03575F2ED35A5700B9B954",
+        "name" : "ABNAmroAssignmentTests"
+      }
+    }
+  ],
+  "version" : 1
+}

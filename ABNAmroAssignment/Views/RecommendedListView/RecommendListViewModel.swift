@@ -4,10 +4,15 @@ import Foundation
 @Observable
 final class RecommendListViewModel {
     private let api: LocationAPISpecs
+    private let navigator: DeepLinkNavigator
     var locations: [Location] = []
 
-    init(api: LocationAPISpecs = LocationAPI()) {
+    init(
+        api: LocationAPISpecs = LocationAPI(),
+        navigator: DeepLinkNavigator
+    ) {
         self.api = api
+        self.navigator = navigator
         Task { await load() }
     }
 
@@ -17,6 +22,8 @@ final class RecommendListViewModel {
     }
 
     func onSelected(location: Location) {
-        print(location)
+        navigator.navigate(
+            to: .wikipedia(lat: location.lat, long: location.long)
+        )
     }
 }

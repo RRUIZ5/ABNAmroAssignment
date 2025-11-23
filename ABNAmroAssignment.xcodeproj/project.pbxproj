@@ -14,35 +14,36 @@
 			remoteGlobalIDString = 3F0357522ED35A5500B9B954;
 			remoteInfo = ABNAmroAssignment;
 		};
-		3F03576B2ED35A5700B9B954 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3F03574B2ED35A5500B9B954 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3F0357522ED35A5500B9B954;
-			remoteInfo = ABNAmroAssignment;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3F0357532ED35A5500B9B954 /* ABNAmroAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABNAmroAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0357602ED35A5700B9B954 /* ABNAmroAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABNAmroAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F03576A2ED35A5700B9B954 /* ABNAmroAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABNAmroAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FD5AB712ED3B0590030205D /* ABNAmroAssignment.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = ABNAmroAssignment.xctestplan; path = ABNAmroAssignmentTests/ABNAmroAssignment.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3F0357AA2ED3A13900B9B954 /* Exceptions for "ABNAmroAssignment" folder in "ABNAmroAssignment" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3F0357522ED35A5500B9B954 /* ABNAmroAssignment */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3F0357552ED35A5500B9B954 /* ABNAmroAssignment */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3F0357AA2ED3A13900B9B954 /* Exceptions for "ABNAmroAssignment" folder in "ABNAmroAssignment" target */,
+			);
 			path = ABNAmroAssignment;
 			sourceTree = "<group>";
 		};
 		3F0357632ED35A5700B9B954 /* ABNAmroAssignmentTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ABNAmroAssignmentTests;
-			sourceTree = "<group>";
-		};
-		3F03577E2ED360A900B9B954 /* Networking */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		3F03577F2ED360B300B9B954 /* Resources */ = {
@@ -67,21 +68,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F0357672ED35A5700B9B954 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3F03574A2ED35A5500B9B954 = {
 			isa = PBXGroup;
 			children = (
-				3F03577E2ED360A900B9B954 /* Networking */,
 				3F0357552ED35A5500B9B954 /* ABNAmroAssignment */,
+				3FD5AB712ED3B0590030205D /* ABNAmroAssignment.xctestplan */,
 				3F0357632ED35A5700B9B954 /* ABNAmroAssignmentTests */,
 				3F0357542ED35A5500B9B954 /* Products */,
 				3F03577F2ED360B300B9B954 /* Resources */,
@@ -93,7 +87,6 @@
 			children = (
 				3F0357532ED35A5500B9B954 /* ABNAmroAssignment.app */,
 				3F0357602ED35A5700B9B954 /* ABNAmroAssignmentTests.xctest */,
-				3F03576A2ED35A5700B9B954 /* ABNAmroAssignmentUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,7 +108,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				3F0357552ED35A5500B9B954 /* ABNAmroAssignment */,
-				3F03577E2ED360A900B9B954 /* Networking */,
 				3F03577F2ED360B300B9B954 /* Resources */,
 			);
 			name = ABNAmroAssignment;
@@ -148,26 +140,6 @@
 			productReference = 3F0357602ED35A5700B9B954 /* ABNAmroAssignmentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3F0357692ED35A5700B9B954 /* ABNAmroAssignmentUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3F03577A2ED35A5700B9B954 /* Build configuration list for PBXNativeTarget "ABNAmroAssignmentUITests" */;
-			buildPhases = (
-				3F0357662ED35A5700B9B954 /* Sources */,
-				3F0357672ED35A5700B9B954 /* Frameworks */,
-				3F0357682ED35A5700B9B954 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3F03576C2ED35A5700B9B954 /* PBXTargetDependency */,
-			);
-			name = ABNAmroAssignmentUITests;
-			packageProductDependencies = (
-			);
-			productName = ABNAmroAssignmentUITests;
-			productReference = 3F03576A2ED35A5700B9B954 /* ABNAmroAssignmentUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,10 +154,6 @@
 						CreatedOnToolsVersion = 26.1.1;
 					};
 					3F03575F2ED35A5700B9B954 = {
-						CreatedOnToolsVersion = 26.1.1;
-						TestTargetID = 3F0357522ED35A5500B9B954;
-					};
-					3F0357692ED35A5700B9B954 = {
 						CreatedOnToolsVersion = 26.1.1;
 						TestTargetID = 3F0357522ED35A5500B9B954;
 					};
@@ -207,7 +175,6 @@
 			targets = (
 				3F0357522ED35A5500B9B954 /* ABNAmroAssignment */,
 				3F03575F2ED35A5700B9B954 /* ABNAmroAssignmentTests */,
-				3F0357692ED35A5700B9B954 /* ABNAmroAssignmentUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,13 +188,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3F03575E2ED35A5700B9B954 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F0357682ED35A5700B9B954 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,13 +211,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F0357662ED35A5700B9B954 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,11 +218,6 @@
 			isa = PBXTargetDependency;
 			target = 3F0357522ED35A5500B9B954 /* ABNAmroAssignment */;
 			targetProxy = 3F0357612ED35A5700B9B954 /* PBXContainerItemProxy */;
-		};
-		3F03576C2ED35A5700B9B954 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3F0357522ED35A5500B9B954 /* ABNAmroAssignment */;
-			targetProxy = 3F03576B2ED35A5700B9B954 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -404,6 +352,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ABNAmroAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -435,6 +384,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ABNAmroAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -499,44 +449,6 @@
 			};
 			name = Release;
 		};
-		3F03577B2ED35A5700B9B954 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mx.tlalocgames.ABNAmroAssignmentUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ABNAmroAssignment;
-			};
-			name = Debug;
-		};
-		3F03577C2ED35A5700B9B954 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mx.tlalocgames.ABNAmroAssignmentUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ABNAmroAssignment;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -563,15 +475,6 @@
 			buildConfigurations = (
 				3F0357782ED35A5700B9B954 /* Debug */,
 				3F0357792ED35A5700B9B954 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3F03577A2ED35A5700B9B954 /* Build configuration list for PBXNativeTarget "ABNAmroAssignmentUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3F03577B2ED35A5700B9B954 /* Debug */,
-				3F03577C2ED35A5700B9B954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
