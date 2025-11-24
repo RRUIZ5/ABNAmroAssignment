@@ -17,6 +17,7 @@ struct RecommendedListView: View {
                     .onTapGesture {
                         viewModel.onSelected(location: location)
                     }
+                    .accessibilityLabel(location.accessibilityLabel)
             }
             .listStyle(.plain)
         }

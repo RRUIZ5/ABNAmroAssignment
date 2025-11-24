@@ -9,4 +9,7 @@ struct Location: Codable, Identifiable, Hashable {
     var id: String {
         "\(lat),\(long)" // a better id is needed
     }
+    var accessibilityLabel: String {
+        name ?? "\(lat.roundTwoDecimals()), \(long.roundTwoDecimals())"
+    }
 }
