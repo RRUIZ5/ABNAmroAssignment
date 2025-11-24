@@ -1,6 +1,7 @@
 # ABN Amro Assignment
 
 The changes to the Wikipedia app can be seen [here](https://github.com/RRUIZ5/wikipedia-ios/tree/assignment)
+
 Note: There is an issue with the Wikipedia app where the app needs to already be in the `Places` tab before navigating to it from the assignment app,
 otherwise it crashes.
 
